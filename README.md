@@ -44,7 +44,7 @@ first one.
   "mcpServers": {
     "muin": {
       "type": "http",
-      "url": "${MUIN_MCP_URL:-https://muin-api.falaah.ai/api/v1/mcp}"
+      "url": "https://muin-api.falaah.ai/api/v1/mcp"
     }
   }
 }
@@ -72,9 +72,10 @@ advertises them:
 | Bearer presentation | `Authorization` header only (`bearer_methods_supported: ["header"]`) |
 | Revocation | `https://muin-api.falaah.ai/api/v1/oauth/revoke` |
 
-Override `MUIN_MCP_URL` to point at your own workspace or a dev backend. The
-Connect page in Muin (**Settings → Integrations → Connect to Claude**) shows
-your workspace's endpoint.
+Every Muin workspace is served from this one endpoint: signing in is what
+selects your organization. The Connect page in Muin
+(**Settings → Integrations → Connect to Claude**) shows the same endpoint and a
+ready-to-copy `.mcp.json`.
 
 ### API key (Claude Code and other terminal use)
 

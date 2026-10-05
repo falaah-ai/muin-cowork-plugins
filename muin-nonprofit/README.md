@@ -90,7 +90,7 @@ endpoint with **no credential in the file**:
   "mcpServers": {
     "muin": {
       "type": "http",
-      "url": "${MUIN_MCP_URL:-https://muin-api.falaah.ai/api/v1/mcp}"
+      "url": "https://muin-api.falaah.ai/api/v1/mcp"
     }
   }
 }
@@ -110,17 +110,9 @@ your own Muin permissions, and you can revoke it without rotating anything.
 PKCE is required and only `S256` is accepted; redirect URIs are matched
 exactly, never by prefix.
 
-To point at your own workspace instead of the public edge, set `MUIN_MCP_URL`.
-Your workspace's endpoint is shown in Muin at
-**Settings → Integrations → Connect to Claude**:
-
-```bash
-# Your own workspace:
-export MUIN_MCP_URL="https://<your-workspace-host>/api/v1/mcp"
-
-# A local dev backend:
-export MUIN_MCP_URL="http://localhost:8000/api/v1/mcp"
-```
+Every Muin workspace is served from this one endpoint: signing in is what
+selects your organization, so there is nothing to configure. The endpoint is
+also shown in Muin at **Settings → Integrations → Connect to Claude**.
 
 ### 3. Claude Code only: connect with an API key
 
@@ -145,7 +137,7 @@ environment variable:
   "mcpServers": {
     "muin": {
       "type": "http",
-      "url": "${MUIN_MCP_URL:-https://muin-api.falaah.ai/api/v1/mcp}",
+      "url": "https://muin-api.falaah.ai/api/v1/mcp",
       "headers": { "Authorization": "Bearer ${MUIN_API_KEY}" }
     }
   }
