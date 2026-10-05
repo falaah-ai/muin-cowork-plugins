@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "muin-cowork-plugins",
+  "owner": {
+    "name": "Falaah AI",
+    "email": "developer@falaah.ai"
+  },
+  "metadata": {
+    "description": "Falaah's Muin platform as Claude Cowork / Claude Code plugins — connect Claude to your non-profit's system of record (funds, donors, grants, 990, contributions).",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "muin-nonprofit",
+      "source": "./muin-nonprofit",
+      "description": "Run your non-profit's back office from Claude: fundraising, fund balances, donor stewardship, grants, IRS Form 990 readiness, and approval-gated donation recording — backed by Muin's system of record.",
+      "version": "0.2.0",
+      "category": "nonprofit",
+      "tags": ["nonprofit", "fundraising", "fund-accounting", "990", "donors", "grants", "donations"],
+      "author": {
+        "name": "Falaah AI",
+        "email": "developer@falaah.ai",
+        "url": "https://falaah.ai"
+      },
+      "license": "Apache-2.0"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "muin-nonprofit",
+  "displayName": "Muin — Non-Profit Back Office",
+  "version": "0.2.0",
+  "description": "Connect Claude to your non-profit's Muin system of record. Read fundraising progress, fund balances, donor stewardship signals, the grant pipeline, and IRS Form 990 readiness; draft donation receipts; and record contributions through an approval gate. Claude conducts the work; Muin keeps the authoritative record.",
+  "author": {
+    "name": "Falaah AI",
+    "email": "developer@falaah.ai",
+    "url": "https://falaah.ai"
+  },
+  "homepage": "https://falaah.ai",
+  "license": "Apache-2.0",
+  "keywords": [
+    "nonprofit",
+    "non-profit",
+    "fundraising",
+    "fund-accounting",
+    "990",
+    "form-990",
+    "donors",
+    "donor-stewardship",
+    "grants",
+    "donations",
+    "endowment",
+    "restricted-funds",
+    "mosque",
+    "masjid",
+    "zakat",
+    "charity"
+  ]
+}

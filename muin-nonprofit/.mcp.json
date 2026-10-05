@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "muin": {
+      "type": "http",
+      "url": "${MUIN_MCP_URL:-https://muin-api.falaah.ai/api/v1/mcp}"
+    }
+  }
+}
